@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:cartoongoodies.com)",
+      "WebFetch(domain:catchteenieping.fandom.com)",
+      "WebFetch(domain:wallpapercave.com)",
+      "WebFetch(domain:www.pxfuel.com)",
+      "WebFetch(domain:ermidk.comic.studio)",
+      "WebFetch(domain:samg.net)"
+    ]
+  }
+}
