@@ -36,7 +36,7 @@
       text-align: center; padding: 50px 20px 30px;
     }
     .birthday-title {
-      font-size: clamp(1.4rem, 5vw, 3rem); color: #e75480;
+      font-size: clamp(1.2rem, 4vw, 1.8rem); color: #e75480;
       text-shadow: 3px 3px 0 #ffb6d9, 6px 6px 0 rgba(231,84,128,0.2);
       animation: bounce 1s infinite alternate;
       white-space: nowrap;
@@ -142,13 +142,17 @@
 
     /* 흐르는 텍스트 */
     .confetti-bar {
-      text-align: center; font-size: 2rem; padding: 20px;
-      animation: scrollText 14s linear infinite; white-space: nowrap;
-      position: relative; z-index: 1; overflow: hidden;
-      width: 100%; box-sizing: border-box;
+      position: relative; z-index: 1;
+      overflow: hidden; width: 100%; padding: 20px 0;
+      box-sizing: border-box;
+    }
+    .confetti-bar span {
+      display: inline-block; white-space: nowrap;
+      font-size: 2rem;
+      animation: scrollText 18s linear infinite;
     }
     @keyframes scrollText {
-      from { transform: translateX(100%); }
+      from { transform: translateX(100vw); }
       to   { transform: translateX(-100%); }
     }
 
@@ -317,7 +321,7 @@
 </section>
 
 <div class="confetti-bar">
-  🎉 유은이 생일 축하해! 🎂 Happy 5th Birthday 유은아! 🎈 하츄핑이 응원해! 💗 🎉 유은이 생일 축하해! 🎂
+  <span>🎉 유은이 생일 축하해! 🎂 Happy 5th Birthday 유은아! 🎈 하츄핑이 응원해! 💗 🎉 유은이 생일 축하해! 🎂</span>
 </div>
 
 <!-- 라이트박스 -->
